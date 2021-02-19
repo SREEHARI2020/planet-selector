@@ -6,8 +6,11 @@
   text-align: center;
   padding-top: 40px;
   border-radius: 15px;
+  box-shadow: inset -5px -5px 10px rgb(145, 255, 0), inset 5px 5px 10px #000000;
 }
-
+.planet-list-selected-header {
+  padding-bottom: 40px;
+}
 .planet-list-selected-element {
   list-style: none;
   font-size: 24px;

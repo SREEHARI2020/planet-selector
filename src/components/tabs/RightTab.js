@@ -5,7 +5,7 @@ const RightTab = ({selected}) => {
     return (
        
              <div className="planet-list-selected-container">
-                 <h1>Your Favourite planets</h1>
+               <div className="planet-list-selected-header"><h1>Your Favourite planets</h1></div>  
             <ul className="planet-list-selected-parent">
                 {selected?selected.map((planet)=>( 
                 <li key={planet.id} className="planet-list-selected-element"  >

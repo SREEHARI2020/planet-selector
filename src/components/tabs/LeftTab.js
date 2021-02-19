@@ -14,15 +14,15 @@ const LeftTab = ({planets,setSelected,selected}) => {
    
     return (
         <div className="planet-list-container">
-             <h1>Select your Favourite planet</h1>
+            <div className="planet-list-header"><h1 >Select your Favourite planet</h1></div> 
             <ul className="planet-list-parent">
            
                 {planets?planets.map((planet,i)=>( 
                 <li key={planet.id} className="planet-list-element"  onClick={()=>handleClick(planet )}>
                     
-                    <span className="planet-list-element-name">{planet.name}</span>
+                    <span >{planet.name}</span>
 
-                 <Checkbox/>
+                
                     </li>
                     )) : <div>Loading...</div>}
                        
