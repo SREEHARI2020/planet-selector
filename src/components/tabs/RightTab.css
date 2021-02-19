@@ -6,16 +6,21 @@
   text-align: center;
   padding-top: 40px;
   border-radius: 15px;
-  box-shadow: inset -5px -5px 10px rgb(145, 255, 0), inset 5px 5px 10px #000000;
+  box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px rgb(55, 84, 122);
 }
 .planet-list-selected-header {
   padding-bottom: 40px;
 }
+
 .planet-list-selected-element {
   list-style: none;
   font-size: 24px;
   padding-bottom: 15px;
   color: #fff;
+}
+.planet-list-selected-enclosing-container {
+  padding-left: 17px;
+  padding-right: 17px;
 }
 .planet-list-selected-element:hover {
   background-color: aquamarine;

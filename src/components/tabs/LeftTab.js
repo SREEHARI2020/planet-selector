@@ -18,12 +18,12 @@ const LeftTab = ({planets,setSelected,selected}) => {
             <ul className="planet-list-parent">
            
                 {planets?planets.map((planet,i)=>( 
-                <li key={planet.id} className="planet-list-element"  onClick={()=>handleClick(planet )}>
+              <div className="planet-list-element-container">  <li key={planet.id} className="planet-list-element"  onClick={()=>handleClick(planet )}> 
                     
                     <span >{planet.name}</span>
 
                 
-                    </li>
+                    </li></div>
                     )) : <div>Loading...</div>}
                        
             </ul>
