@@ -23,3 +23,10 @@
   background-color: aquamarine;
   color: black;
 }
+@media only screen and (max-width: 716px) {
+  .planet-list-container {
+    margin: 0 auto;
+    height: 650px;
+    width: 250px;
+  }
+}
