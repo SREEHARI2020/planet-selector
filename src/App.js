@@ -6,7 +6,9 @@ import BodyComponent from './components/BodyComponent';
 import Navbar from './components/Navbar';
 
 function App() {
-const [planets, setPlanets] = useState()
+const [planets, setPlanets] = useState([]);
+const [selected, setSelected] = useState([]);
+
   useEffect(() => {
   
   const FetchData =async()=>
@@ -17,11 +19,12 @@ const [planets, setPlanets] = useState()
   }
    FetchData();
   }, [])
+  
 
   return (
     <div className="App">
       <Navbar/>
-      <BodyComponent planets={planets}/>
+      <BodyComponent planets={planets} setSelected={setSelected} selected={selected} setPlanets={setPlanets} />
     </div>
   );
 }
