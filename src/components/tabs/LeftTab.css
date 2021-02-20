@@ -38,18 +38,25 @@
   color: rgb(7, 6, 6);
 }
 .planet-list-container-button {
-  margin-top: 35px !important;
+  margin-top: 45px !important;
   opacity: 0.6 !important;
   margin-bottom: 20px !important;
 }
 .planet-list-container-button span {
   margin-right: 10px;
 }
-@media (max-width: 716px) {
-  .planet-list-selected-container {
-    margin: 0 auto;
-    margin-top: 15px;
+@media (min-width: 100px) and (max-width: 767px) {
+  .planet-list-container {
+    height: 770px;
     width: 250px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .planet-list-container-button {
+    margin-top: 40px !important;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .planet-list-container-button {
+    margin-top: 60px !important;
   }
 }
