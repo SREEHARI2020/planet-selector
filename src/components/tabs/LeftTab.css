@@ -45,18 +45,11 @@
 .planet-list-container-button span {
   margin-right: 10px;
 }
-@media (min-width: 100px) and (max-width: 767px) {
-  .planet-list-container {
-    height: 770px;
+@media (max-width: 716px) {
+  .planet-list-selected-container {
+    margin: 0 auto;
+    margin-top: 15px;
     width: 250px;
-    margin-top: 10px;
-  }
-  .planet-list-container-button {
-    margin-top: 40px !important;
-  }
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .planet-list-container-button {
-    margin-top: 60px !important;
+    margin-bottom: 10px;
   }
 }
