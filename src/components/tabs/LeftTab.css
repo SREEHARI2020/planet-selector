@@ -24,6 +24,10 @@
   padding-left: 17px;
   padding-right: 17px;
 }
+.planet-list-element-name-icon {
+  display: flex;
+  justify-content: space-between;
+}
 .planet-list-element:hover {
   background-color: aquamarine;
   color: black;

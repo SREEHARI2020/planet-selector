@@ -14,7 +14,7 @@ const [selected, setSelected] = useState([]);
   const FetchData =async()=>
   {
     const {data}=await axios('https://assignment-machstatz.herokuapp.com/planet')
-  console.log("value",data);
+  
   setPlanets(data)
   }
    FetchData();
