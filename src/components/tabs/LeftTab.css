@@ -1,4 +1,5 @@
 .planet-list-container {
+  margin: 0 auto;
   margin-top: 20px;
   background-color: rgb(121, 121, 104);
   height: 600px;
@@ -9,6 +10,7 @@
   border-radius: 15px;
   box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px rgb(26, 240, 229);
 }
+
 .planet-list-header {
   padding-bottom: 40px;
 }
@@ -31,6 +33,13 @@
 .planet-list-element:hover {
   background-color: aquamarine;
   color: black;
+}
+.planet-list-container-button {
+  margin-top: 20px !important;
+  opacity: 0.6 !important;
+}
+.planet-list-container-button span {
+  margin-right: 10px;
 }
 @media (max-width: 716px) {
   .planet-list-container {

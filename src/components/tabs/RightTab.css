@@ -1,8 +1,11 @@
+.planet-list-selected-container-parent {
+  margin: 0 auto;
+  width: 350px;
+}
 .planet-list-selected-container {
   margin-top: 20px;
   background-color: rgb(121, 121, 104);
 
-  width: 350px;
   text-align: center;
   padding-top: 40px;
   border-radius: 15px;
@@ -25,6 +28,15 @@
 .planet-list-selected-element:hover {
   background-color: aquamarine;
   color: black;
+}
+.planet-list-selected-container-button {
+  transform: translateX(50%);
+  margin-top: 20px !important;
+  opacity: 0.9 !important;
+}
+
+.planet-list-selected-container-button span {
+  margin-right: 10px;
 }
 @media (max-width: 716px) {
   .planet-list-selected-container {

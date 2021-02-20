@@ -2,8 +2,11 @@
 import {useState,useEffect}from 'react';
 import axios from 'axios';
 import './App.css';
-import BodyComponent from './components/BodyComponent';
+
 import Navbar from './components/Navbar';
+import{BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import LeftTab from './components/tabs/LeftTab';
+import RightTab from './components/tabs/RightTab'
 
 function App() {
 const [planets, setPlanets] = useState([]);
@@ -22,10 +25,17 @@ const [selected, setSelected] = useState([]);
   
 
   return (
+    <Router>
     <div className="App">
       <Navbar/>
-      <BodyComponent planets={planets} setSelected={setSelected} selected={selected} setPlanets={setPlanets} />
+      <Switch>
+        <Route exact path='/home'><LeftTab planets={planets} setSelected={setSelected} selected={selected} setPlanets={setPlanets}/></Route>
+        <Route exact path='/planet'><RightTab selected={selected}/></Route>
+    
+      </Switch>
     </div>
+
+    </Router>
   );
 }
 
