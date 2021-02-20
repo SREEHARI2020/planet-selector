@@ -9,7 +9,7 @@ const RightTab = ({selected}) => {
             <ul className="planet-list-selected-parent">
                 {selected?selected.map((planet)=>( 
                   
-                <div className="planet-list-selected-enclosing-container"><li key={planet.id} className="planet-list-selected-element"  >
+                <div key={planet.id} className="planet-list-selected-enclosing-container"><li  className="planet-list-selected-element"  >
                     {planet.name}
 
                  
