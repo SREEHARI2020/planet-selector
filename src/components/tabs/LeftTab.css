@@ -1,24 +1,27 @@
 .planet-list-container {
   margin: 0 auto;
   margin-top: 20px;
-  background-color: rgb(121, 121, 104);
-  height: 600px;
+  background-color: #242424;
+  height: 750px;
   width: 350px;
   text-align: center;
   padding-top: 40px;
 
+  padding: 15px;
   border-radius: 15px;
   box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 10px rgb(26, 240, 229);
 }
 
 .planet-list-header {
   padding-bottom: 40px;
+  color: #fff;
 }
 .planet-list-element {
   padding-left: 10px;
   padding-right: 10px;
   list-style: none;
   font-size: 24px;
+  font-weight: bold;
   padding-bottom: 15px;
   color: #fff;
 }
@@ -31,11 +34,11 @@
   justify-content: space-between;
 }
 .planet-list-element:hover {
-  background-color: aquamarine;
-  color: black;
+  background-color: rgb(83, 92, 89);
+  color: rgb(7, 6, 6);
 }
 .planet-list-container-button {
-  margin-top: 20px !important;
+  margin-top: 35px !important;
   opacity: 0.6 !important;
   margin-bottom: 20px !important;
 }
@@ -44,8 +47,18 @@
 }
 @media (max-width: 716px) {
   .planet-list-container {
-    height: 650px;
+    height: 770px;
     width: 250px;
     margin-top: 10px;
+  }
+}
+@media only screen and (device-width: 768px) {
+  .planet-list-container-button {
+    margin-top: 60px !important;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .planet-list-container-button {
+    margin-top: 65px !important;
   }
 }

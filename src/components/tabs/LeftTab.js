@@ -7,6 +7,7 @@ import {useHistory} from 'react-router-dom';
 import { Button } from '@material-ui/core';
 import { Loading } from './loader/Loading';
 
+
 const LeftTab = ({planets,setSelected,selected,setPlanets}) => {
     const history=useHistory();
    
@@ -51,11 +52,11 @@ const LeftTab = ({planets,setSelected,selected,setPlanets}) => {
                 <div>{planet.isFavourite?<FavoriteIcon/>:<FavoriteBorderIcon/>}</div>
                 </div>
                     </li></div>
-                    )) : <div><Loading/></div>}
+                    )) : <Loading/>}
                        
             </ul>
             </div>
-            <Button className="planet-list-container-button"  variant="contained"
+            <Button disabled={!selected} className="planet-list-container-button"  variant="contained" 
         
         size="large"onClick={()=>history.push('/planet')}> <span>View</span> < SendIcon/></Button>
         </div>

@@ -13,7 +13,7 @@ const RightTab = ({selected}) => {
                   
                <div className="planet-list-selected-header"><h1>Your Favourite planets</h1></div>  
             <ul className="planet-list-selected-parent">
-                {selected?selected.map((planet)=>( 
+                {selected.length?selected.map((planet)=>( 
                   
                 <div key={planet.id} className="planet-list-selected-enclosing-container">
                     <li  className="planet-list-selected-element"  >
@@ -22,7 +22,7 @@ const RightTab = ({selected}) => {
                  
                     </li></div>
                     
-                    )) : <div>Loading...</div>}
+                    )) : <div className="planet-list-selected-element-empty"><span> No Planets Selected</span></div>}
                        
             </ul>
             

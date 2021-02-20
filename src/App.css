@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Oi&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,6 +7,9 @@
 body {
   background: url(uni2.jpg) no-repeat center center fixed;
   background-size: cover;
-  font-family: "Barlow Condensed", sans-serif;
-  opacity: 0.5;
+  font-family: "Poppins", sans-serif;
+  opacity: 0.7;
+}
+.App {
+  width: 100vw;
 }

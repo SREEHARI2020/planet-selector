@@ -1,15 +1,10 @@
 .Navbar {
   background-color: #242424;
-  height: 150px;
+  height: 80px;
   color: #fff;
-  font-size: 44px;
-  padding-top: 40px;
+  font-size: 34px;
+  padding-top: 10px;
   padding-left: 30px;
   display: flex;
   align-items: center;
-}
-@media (max-width: 716px) {
-  .Navbar {
-    height: 100px;
-  }
 }
