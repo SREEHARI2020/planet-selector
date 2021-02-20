@@ -5,6 +5,7 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import SendIcon from '@material-ui/icons/Send';
 import {useHistory} from 'react-router-dom';
 import { Button } from '@material-ui/core';
+import { Loading } from './loader/Loading';
 
 const LeftTab = ({planets,setSelected,selected,setPlanets}) => {
     const history=useHistory();
@@ -50,7 +51,7 @@ const LeftTab = ({planets,setSelected,selected,setPlanets}) => {
                 <div>{planet.isFavourite?<FavoriteIcon/>:<FavoriteBorderIcon/>}</div>
                 </div>
                     </li></div>
-                    )) : <div>Loading...</div>}
+                    )) : <div><Loading/></div>}
                        
             </ul>
             </div>

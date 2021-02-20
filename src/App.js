@@ -29,7 +29,7 @@ const [selected, setSelected] = useState([]);
     <div className="App">
       <Navbar/>
       <Switch>
-        <Route exact path='/home'><LeftTab planets={planets} setSelected={setSelected} selected={selected} setPlanets={setPlanets}/></Route>
+        <Route exact path='/'><LeftTab planets={planets} setSelected={setSelected} selected={selected} setPlanets={setPlanets}/></Route>
         <Route exact path='/planet'><RightTab selected={selected}/></Route>
     
       </Switch>

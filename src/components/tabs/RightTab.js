@@ -30,7 +30,7 @@ const RightTab = ({selected}) => {
         </div>
          <Button className="planet-list-selected-container-button"  variant="contained"
         
-         size="large"onClick={()=>history.push('/home')}> <span>Go Back</span> <ArrowBackIcon/> </Button> 
+         size="large"onClick={()=>history.push('/')}> <span>Go Back</span> <ArrowBackIcon/> </Button> 
 
       </div>
     )
