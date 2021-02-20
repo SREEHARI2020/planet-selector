@@ -4,7 +4,7 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 
 const LeftTab = ({planets,setSelected,selected,setPlanets}) => {
-   console.log("dude",planets)
+   
     const handleClick=(planet,i)=>{
      
       const Toggle=[...planets];
@@ -35,7 +35,7 @@ const LeftTab = ({planets,setSelected,selected,setPlanets}) => {
             <ul className="planet-list-parent">
            
                 {planets?planets.map((planet,i)=>( 
-              <div className="planet-list-element-container">  <li key={planet.id} className="planet-list-element"  onClick={()=>handleClick(planet,i )}> 
+              <div key={planet.id} className="planet-list-element-container">  <li  className="planet-list-element"  onClick={()=>handleClick(planet,i )}> 
                     
                     <div className="planet-list-element-name-icon">
                     <span >{planet.name}</span>
