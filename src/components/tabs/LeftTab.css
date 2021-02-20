@@ -45,11 +45,14 @@
 .planet-list-container-button span {
   margin-right: 10px;
 }
-@media (max-width: 716px) {
+@media (max-width: 767px) {
   .planet-list-container {
     height: 770px;
     width: 250px;
     margin-top: 10px;
+  }
+  .planet-list-container-button {
+    margin-top: 40px !important;
   }
 }
 @media only screen and (device-width: 768px) {
@@ -57,7 +60,7 @@
     margin-top: 60px !important;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
   .planet-list-container-button {
     margin-top: 65px !important;
   }
